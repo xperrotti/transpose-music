@@ -5,15 +5,15 @@ import soundfile
 
 
 def main():
-    input_file = input("Enter the name of the input file: ")
-    semitone = input("Enter the number of semitones to transpose: ")
-    print(semitone)
+    input_file = input("Insira o nome da música de origem: ")
+    #generates the output file based on the input_file name + _transposed.wav
+    output_file = input_file[:-4] + "_transposed.wav"
+    semitone = input("Insira o numero de semitons (números positivos sobem o tom, números negativos descem o tom): ")
     semitone = int(semitone)
-    #semitone = -semitone
-    print(semitone)
-    y, sr = librosa.load(input_file)
+    y, sr = librosa.load(input_file, sr=44100)
+    #new_y = librosa.effects.pitch_shift(y, sr, semitone, n_fft=16384)
     new_y = librosa.effects.pitch_shift(y, sr, semitone)
-    soundfile.write("pitchShifted.wav", new_y, sr,)
+    soundfile.write(output_file, new_y, sr,)
 
 
 main()
