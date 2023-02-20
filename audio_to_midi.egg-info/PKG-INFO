@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: audio-to-midi
+Version: 2020.7
+Summary: Convert audio to multichannel MIDI.
+Home-page: https://github.com/NFJones/audio-to-midi
+Author: Neil F Jones
+License: UNKNOWN
+Keywords: audio midi conversion
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+License-File: COPYING
+
+# transpose-music
+python script to transpose an mp3 file to another key
+
+
+pip3 install -r requirements.txt
+
+brew install timidity fluidsynth ffmpeg libsndfile
+
+or
+
+arch -x86_64 brew install timidity fluidsynth ffmpeg libsndfile
+
+

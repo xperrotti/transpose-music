@@ -1,0 +1,9 @@
+COPYING
+README.md
+setup.py
+audio_to_midi.egg-info/PKG-INFO
+audio_to_midi.egg-info/SOURCES.txt
+audio_to_midi.egg-info/dependency_links.txt
+audio_to_midi.egg-info/entry_points.txt
+audio_to_midi.egg-info/requires.txt
+audio_to_midi.egg-info/top_level.txt
