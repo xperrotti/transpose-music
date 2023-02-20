@@ -1,3 +1,0 @@
-music21
-pydub
-audio-to-midi

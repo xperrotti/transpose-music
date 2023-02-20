@@ -1,3 +1,0 @@
-[console_scripts]
-audio-to-midi = audio_to_midi.main:main
-
